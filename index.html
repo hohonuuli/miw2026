@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th Marine Imaging Workshop – 2026</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="hero-header" id="home">
+        <nav class="hero-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">More info</a></li>
+                <li><a href="attendees.html">For Attendees</a></li>
+                <!-- <li><a href="registration.html">Registration</a></li>
+                <li><a href="program.html">Program</a></li> -->
+                <li>|</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-title">
+            <h1>Marine Imaging Workshop 2026</h1>
+            <h2>Advancing Global Ocean Observation</h2>
+            <p class="hero-meta">
+                May 19–21, 2026<br>
+                Gibraltar<br>
+                <!-- <span class="credit">Image: (replace with your photo credit)</span> -->
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2>About</h2>
+            <article>
+                <h3>The Marine Imaging Workshop</h3>
+                <p>
+                    The Marine Imaging Workshop (MIW) is a well-established and successful international conference that
+                    brings together scientists and engineers from various disciplines with a view of sharing of
+                    knowledge, expertise and best practice; ensuring the Marine Imaging field is constantly evolving.
+                    The three-day conference will comprise two days of oral and poster sessions, and one day for short
+                    interactive workshops, allowing methodology/software to be demonstrated to participants. Topics
+                    covered during the workshop will range from data collection and processing to annotation, data
+                    management, and more.
+                </p>
+                <!-- <p>
+                    The Marine Imaging Workshop (MIW) brings together a global community of researchers,
+                    engineers, and practitioners to present the state of the art in imaging technologies,
+                    data workflows, and analytical methods. The workshop encourages
+                    cross-disciplinary collaboration, supports early-career researchers,
+                    and highlights emerging challenges and opportunities in marine imaging.
+                    <a href="about.html">Learn more</a>.
+                </p> -->
+            </article>
+
+            <!-- <article>
+                <h3>Sponsors</h3>
+                <div class="sponsor-strip">
+                    <img src="assets/images/oesBlue.png" alt="OES">
+                    <img src="assets/images/logo-mbari-3b.png" alt="MBARI">
+                    <img src="assets/images/sponsors/moore/moore-logo-color.jpg" alt="Moore Foundation">
+                    <img src="assets/images/sponsors/soi/SOI-Logo-fullcolor-brand-V4.png" alt="SOI">
+                    <img src="assets/images/sponsors/boxfish/Boxfish-Logo-Horizontal-dark-theme-screen-highres.png"
+                        alt="Boxfish">
+                    <img src="assets/images/sponsors/subc/subc_imaging_logo_720.png" alt="SubC">
+                </div>
+            </article> -->
+
+            <article>
+                <h3>Venue</h3>
+                <p>The 2026 Marine Imaging Workshop will be held at the 5-star <a
+                        href="https://www.sunborngibraltar.com">Sunborn Hotel</a> in Gibraltar.</p>
+                <div id="map"></div>
+            </article>
+        </section>
+
+
+        <!-- NEWS -->
+        <section id="news" class="section alt">
+            <h2>Latest News</h2>
+            <dl class="datelist">
+                <dt>JAN 2025</dt>
+                <dd>Workshop planning has begun. Venue announcement coming soon.</dd>
+
+                <dt>NOV 2024</dt>
+                <dd>Scientific organizing committee formed.</dd>
+
+                <dt>OCT 2024</dt>
+                <dd>MIW 2024 successfully completed in Monterey, CA.</dd>
+
+
+            </dl>
+        </section>
+
+        <!-- SCHEDULE -->
+        <section id="schedule" class="section">
+            <h2>Key Dates</h2>
+            <dl class="datelist">
+                <dt>JAN 30, 2026</dt>
+                <dd>Abstract submission deadline</dd>
+
+                <dt>FEB 20, 2026</dt>
+                <dd>Notification to authors</dd>
+
+                <dt>Mar 20, 2026</dt>
+                <dd>Early bird registration closes</dd>
+
+                <dt>APR 13, 2026</dt>
+                <dd>Draft Program</dd>
+
+                <dt>May 19-21, 2026</dt>
+                <dd>7th Marine Imagine Workshop</dd>
+            </dl>
+        </section>
+
+        <section class="section">
+            <h2>Committees</h2>
+
+            <h3>Local Organizing Committee</h3>
+            <ul>
+                <li>Jaime Davies, University of Gibraltar</li>
+                <li>Awantha Dissanayake, University of Gibraltar</li>
+                <li>Kerry Howell, Plymouth Marine Laboratory/University of Plymouth</li>
+            </ul>
+
+            <h3>Science Committee</h3>
+            <ul>
+                <li><a href="https://noc.ac.uk/n/Jennifer+Durden">Jennifer Durden</a>, National Oceanography Centre
+                    (NOC) – COMMITTEE CHAIR</li>
+                <li><a href="https://people.csiro.au/A/F/Franzis-Althaus">Franzis Althaus</a>, The Commonwealth
+                    Scientific and Industrial Research Organisation (CSIRO)</li>
+                <li><a href="https://annuaire.ifremer.fr/cv/17350/en/">Catherine Borremans</a>, The Institut Français de
+                    Recherche pour l'Exploitation de la Mer (IFREMER)</li>
+                <li><a href="https://www.greybits.com.au/">Ari Friedman</a>, Greybits Engineering</li>
+                <li><a href="https://www.geomar.de/en/hhauss">Helena Hauss</a>, GEOMAR Helmholtz Centre for Ocean
+                    Research</li>
+                <li><a href="https://www.plymouth.ac.uk/staff/kerry-howell-2">Kerry Howell</a>, Plymouth Marine
+                    Laboratory/University of Plymouth</li>
+                <li><a href="https://www.jamstec.go.jp/souran/html/Dhugal_Lindsay_d1f63-e.html">Dhugal Lindsay</a>, The
+                    Japan Agency for Marine-Earth Science and Technology (JAMSTEC)</li>
+                <li><a href="https://publications.cnr.it/authors/simone.marini">Simone Marini</a>, Istituto di Scienze
+                    Marine CNR</li>
+                <li><a href="https://discover.utas.edu.au/jacquomo.monk">Jacquomo Monk</a>, University of Tasmania</li>
+                <li><a href="https://mare-madeira.pt/team/telmo-morato/">Telmo Morato</a>, University of the Azores</li>
+                <li><a href="https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=11602">Tim
+                        Nattkemper</a>, Bielefeld University</li>
+                <li><a href="https://orcid.org/0000-0002-9822-6774">Eric Orenstein</a>, National Oceanography Centre NOC
+                </li>
+                <li><a href="https://www.ntnu.edu/employees/oscar.pizarro">Oscar Pizarro</a>, Norwegian University of
+                    Science and Technology (NTNU)</li>
+                <li><a href="https://www.mbari.org/person/paul-roberts/">Paul Roberts</a>, Monterey Bay Aquarium
+                    Research Institute (MBARI)</li>
+                <li><a href="https://www2.whoi.edu/staff/hsosik/">Heidi Sosik</a>, Woods Hole Oceanographic Institution
+                    (WHOI)</li>
+            </ul>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section alt">
+            <h2>Contact</h2>
+            <p>For more information email <a href="mailto:SMES@unigib.edu.gi">SMES@unigib.edu.gi</a></p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Marine Imaging Workshop</p>
+    </footer>
+
+    <script src="assets/js/map.js"></script>
+</body>
+
+</html>
