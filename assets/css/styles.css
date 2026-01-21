@@ -229,3 +229,22 @@ body {
   background: #f5f5f5;
   margin-top: 2rem;
 }
+
+/* INFO BOX ---------------------------------------------------------- */
+
+.info-box {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+  border: 2px solid #f0ad4e;
+  border-left: 6px solid #f0ad4e;
+  border-radius: var(--radius);
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.05rem;
+  color: #856404;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box::before {
+  content: "ℹ️ ";
+  font-size: 1.2rem;
+}
