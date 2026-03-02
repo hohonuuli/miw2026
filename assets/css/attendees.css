@@ -2,6 +2,7 @@
     --bg: #fbfdff;
     --card: #ffffff;
     --accent: #0b6b8f;
+    --accent-alert: #ff6b35;
     --muted: #555;
     --max-width: 900px;
     --radius: 10px;
@@ -64,6 +65,13 @@ header p {
     margin: 0 0 var(--gap) 0;
     border-radius: 8px;
     color: #0b3a46;
+}
+
+/* complementary alert variant for .lead */
+.lead.alert {
+    background: #fff6f1;
+    border-left-color: var(--accent-alert);
+    color: #6b2b00;
 }
 
 h2 {
