@@ -1,12 +1,18 @@
 var conferenceCenter = [36.14844, -5.35342]
+var europaPoint = [36.11111541554601, -5.34795005410651]
 var map = L.map('map').setView(conferenceCenter, 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+var marker = L.marker(europaPoint).addTo(map);
+marker.bindPopup("<b>University of Gibraltar</b> - May 18th").openPopup();
+
 var marker = L.marker(conferenceCenter).addTo(map);
-marker.bindPopup("<b>Sunborn Gibraltar</b>").openPopup();
+marker.bindPopup("<b>Sunborn Gibraltar</b> - May 19–21, 2026").openPopup();
+
+
 
 // var mba = [36.618264, -121.901792]
 // var marker2 = L.marker(mba).addTo(map);

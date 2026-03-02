@@ -230,6 +230,42 @@ body {
   margin-top: 2rem;
 }
 
+/* TABLES ------------------------------------------------------------ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.97rem;
+}
+
+thead th {
+  background: var(--blue);
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background: var(--light-blue);
+}
+
+tbody tr:hover {
+  background: #d6e8f5;
+}
+
+tbody td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #d0dde8;
+  vertical-align: top;
+}
+
 /* INFO BOX ---------------------------------------------------------- */
 
 .info-box {
