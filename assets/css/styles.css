@@ -360,6 +360,34 @@ tbody td {
   background: var(--light-blue);
 }
 
+.btn-register {
+  background: linear-gradient(135deg, #1a6fc4 0%, #0e4a8a 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 14px rgba(24, 62, 111, 0.35);
+  animation: register-pulse 2.8s ease-in-out infinite;
+  transition: box-shadow 0.25s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-register:hover {
+  background: linear-gradient(135deg, #2180e0 0%, #183e6f 100%);
+  box-shadow: 0 0 0 4px rgba(30, 120, 220, 0.25), 0 0 22px rgba(30, 120, 220, 0.55);
+  transform: translateY(-2px);
+  animation: none;
+}
+
+@keyframes register-pulse {
+  0%,
+  100% {
+    box-shadow: 0 4px 14px rgba(24, 62, 111, 0.35);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(30, 120, 220, 0.55), 0 0 0 5px rgba(30, 120, 220, 0.12);
+  }
+}
+
 /* INFO BOX ---------------------------------------------------------- */
 
 .info-box {
