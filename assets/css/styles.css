@@ -460,3 +460,8 @@ tbody td {
   content: "ℹ️ ";
   font-size: 1.2rem;
 }
+
+/* MISC ------------------------------------------------------------ */
+.breathing-space {
+  margin-bottom: 1.2rem;
+}
