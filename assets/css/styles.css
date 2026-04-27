@@ -188,17 +188,67 @@ body {
 
 /* SPONSORS ----------------------------------------------------------- */
 
-.sponsor-strip {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 1rem 0;
+.sponsor-tier {
+  margin-bottom: 1.5rem;
 }
 
-.sponsor-strip img {
-  height: 60px;
+.sponsor-tier-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.65rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+
+.sponsor-tier-label.gold {
+  background: #f5c842;
+  color: #5a3e00;
+}
+
+.sponsor-tier-label.silver {
+  background: #c0c8d0;
+  color: #2a2a2a;
+}
+
+.sponsor-tier-label.bronze {
+  background: #c8956a;
+  color: #3b1a00;
+}
+
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sponsor-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #d0dde8;
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  width: 200px;
+  height: 110px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+.sponsor-card:hover {
+  box-shadow: 0 2px 10px rgba(24, 62, 111, 0.15);
+}
+
+.sponsor-card img {
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 /* MAP --------------------------------------------------------------- */
