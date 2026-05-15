@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Imaging Workshop 2026 - Programme</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .day-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin: 1.5rem 0 0;
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .day-tab {
+            padding: 0.5rem 1.1rem;
+            cursor: pointer;
+            background: var(--light-blue);
+            border: 1px solid #c0d0e0;
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+            font-size: 0.92rem;
+            font-weight: 500;
+            color: var(--gray);
+            transition: background 0.15s;
+            font-family: inherit;
+        }
+
+        .day-tab:hover {
+            background: #d6e8f5;
+        }
+
+        .day-tab.active {
+            background: var(--blue);
+            color: #fff;
+            border-color: var(--blue);
+        }
+
+        .day-panel {
+            display: none;
+            padding-top: 1.25rem;
+        }
+
+        .day-panel.active {
+            display: block;
+        }
+
+        .schedule-table th:first-child {
+            width: 110px;
+        }
+
+        .schedule-table th:nth-child(2) {
+            width: 175px;
+        }
+
+        tr.row-session td {
+            background: var(--blue);
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.55rem 1rem;
+        }
+
+        tr.row-break td {
+            background: #f0f4f8;
+            color: #5a6a7a;
+            font-style: italic;
+        }
+
+        tr.row-special td {
+            background: #edf5e8;
+            font-weight: 500;
+        }
+
+        tr.row-dinner td {
+            background: #f5edf5;
+            font-weight: 500;
+        }
+
+        .time-col {
+            white-space: nowrap;
+            font-variant-numeric: tabular-nums;
+            font-size: 0.91rem;
+            color: #555;
+        }
+
+        .presenter-name {
+            font-weight: 500;
+        }
+
+        .talk-title {
+            font-size: 0.92rem;
+        }
+
+        .lightning-list {
+            margin: 0.4rem 0 0;
+            padding-left: 1.4rem;
+            font-size: 0.88rem;
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        .lightning-list li {
+            margin: 0.15rem 0;
+            break-inside: avoid;
+        }
+
+        @media (max-width: 600px) {
+            .lightning-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="hero-header" id="home">
+        <nav class="hero-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attendees.html">For Attendees</a></li>
+                <li><a href="presenters.html">For Presenters</a></li>
+                <li><a href="conference_outline.html">Conference</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a class="nav-slack" href="https://marineimaging.slack.com/" target="_blank" rel="noopener noreferrer">Slack</a></li>
+                <li>|</li>
+                <li><a href="#programme">Schedule</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-title">
+            <h1>Marine Imaging Workshop 2026</h1>
+            <h2>Advancing Global Ocean Observation</h2>
+            <p class="hero-meta">
+                May 19–21, 2026<br>
+                Gibraltar<br>
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <section id="programme" class="section">
+            <h2>Programme</h2>
+            <p>All sessions take place at the <strong>Sunborn Hotel</strong>, Gibraltar, unless otherwise noted. Times are local (CEST, UTC+2).</p>
+
+            <div class="cta">
+                <a class="btn btn-primary" href="assets/Marine_Imaging_Workshop 2026.pdf" target="_blank">&#128196; Full Programme (PDF)</a>
+                <a class="btn btn-ghost" href="assets/Poster_Lightning_Talk Schedule.pdf" target="_blank">&#128196; Poster Lightning Talk Schedule (PDF)</a>
+            </div>
+
+            <!-- DAY TABS -->
+            <div class="day-tabs">
+                <button class="day-tab active" data-tab="mon">Mon 18 May</button>
+                <button class="day-tab" data-tab="tue">Tue 19 May</button>
+                <button class="day-tab" data-tab="wed">Wed 20 May</button>
+                <button class="day-tab" data-tab="thu">Thu 21 May</button>
+                <button class="day-tab" data-tab="fri">Fri 22 May</button>
+            </div>
+
+            <!-- ============================================================
+                 MONDAY 18 MAY — Pre-Conference
+                 ============================================================ -->
+            <div id="tab-mon" class="day-panel active">
+                <h3>Monday, 18 May 2026 — Pre-Conference</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th colspan="2">Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-special">
+                            <td class="time-col">16:30</td>
+                            <td colspan="2">Pickup from Sunborn</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">17:00–19:00</td>
+                            <td colspan="2">Icebreaker — University of Gibraltar (Europa Point)</td>
+                        </tr>
+                        <tr class="row-special">
+                            <td class="time-col">19:15</td>
+                            <td colspan="2">Transport leaves Europa Point</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ============================================================
+                 TUESDAY 19 MAY — Conference Day 1
+                 ============================================================ -->
+            <div id="tab-tue" class="day-panel">
+                <h3>Tuesday, 19 May 2026 — Conference Day 1</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Speaker</th>
+                            <th>Talk / Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-break">
+                            <td class="time-col">08:30–09:30</td>
+                            <td colspan="2">Registration &amp; coffee (light breakfast)</td>
+                        </tr>
+                        <tr class="row-special">
+                            <td class="time-col">09:30–09:45</td>
+                            <td colspan="2">MIW2026 — Opening</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Session 1: Image Capture &amp; Processing for Marine Research</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">09:45–10:00</td>
+                            <td class="presenter-name">Mojtaba Masoudi</td>
+                            <td class="talk-title">Best practices for image processing in marine biodiversity workflows</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:00–10:15</td>
+                            <td class="presenter-name">Fanny Girard</td>
+                            <td class="talk-title">Hidden in Plain Sight: Unlocking the potential of publicly available video data to increase our knowledge of biodiversity in the deep sea</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:15–10:30</td>
+                            <td class="presenter-name">Daphne Cuvelier</td>
+                            <td class="talk-title">Detect the undetected: First observations of fluorescence in the hydrothermal vent organisms of the Mid-Atlantic Ridge and its potential for automated image analysis</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:30–10:45</td>
+                            <td class="presenter-name">Emma Poliakova</td>
+                            <td class="talk-title">Automated pre-processing of large underwater ROV datasets for 3D photogrammetry</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:45–11:00</td>
+                            <td class="presenter-name">Joost Daniels</td>
+                            <td class="talk-title">Adaptive sampling of midwater animals using long range autonomous underwater vehicles with a multi-camera imaging payload</td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">11:00–11:30</td>
+                            <td colspan="2">Coffee break</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Session 1 (continued): Image Capture &amp; Processing for Marine Research</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:30–11:45</td>
+                            <td class="presenter-name">Michele Grimaldi</td>
+                            <td class="talk-title">From Surface to Depth: A Benchmark and Cross-Domain Approach to Recover 3D Reconstructions</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:45–12:00</td>
+                            <td class="presenter-name">Tobias Ferreira</td>
+                            <td class="talk-title">Paidiverpy: A Python framework for reproducible image processing pipelines, aimed at generating analysis-ready image datasets</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:00–12:15</td>
+                            <td class="presenter-name">Dhugal Lindsay</td>
+                            <td class="talk-title">Imaging approaches for construction of digital holotypes: matching tools to taxon</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Session 2: Data-Driven Ocean Science — Artificial Intelligence in Marine Science</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:15–12:30</td>
+                            <td class="presenter-name">Laura Weihl</td>
+                            <td class="talk-title">Uncovering Anomalous Events for Marine Environmental Monitoring via Visual Anomaly Detection</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:30–12:45</td>
+                            <td class="presenter-name">Davide Brembilla</td>
+                            <td class="talk-title">Unlocking Legacy Marine Image Annotations to improve AI Models for Benthic Fauna Classification</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:45–13:00</td>
+                            <td class="presenter-name">Rylan Command</td>
+                            <td class="talk-title">Optimizing an image annotation workflow using AI: practical guidance for applying pre-trained object detection models to seafloor imagery data</td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">13:00–14:00</td>
+                            <td colspan="2">Lunch</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Session 2 (continued): Data-Driven Ocean Science — Artificial Intelligence in Marine Science</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:00–14:15</td>
+                            <td class="presenter-name">Ada Carter</td>
+                            <td class="talk-title">Long-Term Ecological Patterns from Automated Species Detection at the Mothra Hydrothermal Field, NE Pacific</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:15–14:30</td>
+                            <td class="presenter-name">David Price</td>
+                            <td class="talk-title">Assessing exploited intertidal fishery resources across complex coastal terrain using 3D photogrammetry</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:30–14:45</td>
+                            <td class="presenter-name">Joseph Marlow</td>
+                            <td class="talk-title">3D photogrammetry and deep-learning deliver accurate estimates of epibenthic biomass</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:45–15:00</td>
+                            <td class="presenter-name">Enrique Montes</td>
+                            <td class="talk-title">Assessing seasonal variability in the biogeography of planktonic communities in south Florida, USA, by merging in vivo plankton imaging observations with dynamic satellite seascapes</td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">15:00–15:30</td>
+                            <td colspan="2">Coffee break</td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">15:30–15:45</td>
+                            <td class="presenter-name">Alejandra Mejía-Saenz</td>
+                            <td class="talk-title">From GoPro videos to automated seafloor megafauna identification: An end-to-end pipeline and lessons learned</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">15:45–16:00</td>
+                            <td class="presenter-name">Meike Nienaber</td>
+                            <td class="talk-title">Increasing Robustness for Underwater Image Matching via Rotation Invariance</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">16:00–16:15</td>
+                            <td class="presenter-name">Kevin Barnard</td>
+                            <td class="talk-title">Scaling Marine Image Annotations with AI-enabled, Human-In-the-Loop Pipelines</td>
+                        </tr>
+
+                        <tr class="row-special">
+                            <td class="time-col">16:15–17:30</td>
+                            <td colspan="2">
+                                &#9889; Lightning talks: Posters
+                                <ol class="lightning-list">
+                                    <li>Lonny Lundsten</li>
+                                    <li>Katleen Robert</li>
+                                    <li>Benedetta Zoe Donelli</li>
+                                    <li>Ahmet Faruk Semerci</li>
+                                    <li>Jennifer Durden</li>
+                                    <li>Gavin Donohue</li>
+                                    <li>Kelsey Archer Barnhill</li>
+                                    <li>Cameron Trotter</li>
+                                    <li>Filippo Varini</li>
+                                    <li>Raphaela Neves</li>
+                                    <li>Eleanor Cross</li>
+                                    <li>Judith Fischer</li>
+                                    <li>Nancy Jacobsen Stout</li>
+                                    <li>Heather Doig</li>
+                                    <li>Esther Marcayata-Vaca</li>
+                                    <li>John Halpin</li>
+                                    <li>Scott Brown</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ============================================================
+                 WEDNESDAY 20 MAY — Conference Day 2 / Workshops
+                 ============================================================ -->
+            <div id="tab-wed" class="day-panel">
+                <h3>Wednesday, 20 May 2026 — Conference Day 2 / Workshops</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Speaker</th>
+                            <th>Talk / Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-break">
+                            <td class="time-col">08:30–09:30</td>
+                            <td colspan="2">Registration &amp; coffee (light breakfast)</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Session 2 (continued): Data-Driven Ocean Science — Artificial Intelligence in Marine Science</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">09:30–09:45</td>
+                            <td class="presenter-name">Gaby Kourie</td>
+                            <td class="talk-title">Human-and-AI-in-the-Loop Marine Image Annotation in the BIIGLE online tool</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">09:45–10:00</td>
+                            <td class="presenter-name">David Moffat</td>
+                            <td class="talk-title">Transferring a YOLOv8 Benthic Species Detection Model to New Sites</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:00–10:15</td>
+                            <td class="presenter-name">Antonio Al Makdissi</td>
+                            <td class="talk-title">State of the art of Vision-Language Models and Multimodal Integration for Advanced Semantic Interpretation in Marine Imaging</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:15–10:30</td>
+                            <td class="presenter-name">Patricia Schöntag</td>
+                            <td class="talk-title">A Constellation Matching Approach to Increase Robustness of Underwater Image Matching</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:30–10:45</td>
+                            <td class="presenter-name">Chloe Game</td>
+                            <td class="talk-title">Enhancing automated image analysis of vulnerable seabed communities with environmental context conditioning</td>
+                        </tr>
+
+                        <tr class="row-special">
+                            <td class="time-col">10:45–11:00</td>
+                            <td colspan="2">
+                                &#9889; Lightning talks: Workshops
+                                <ol class="lightning-list">
+                                    <li>Megan Cromwell</li>
+                                    <li>Evangelos Alevizos</li>
+                                    <li>Kerry Howell</li>
+                                    <li>Ariell Friedman</li>
+                                    <li>Kevin Barnard</li>
+                                    <li>Katharine Bigham</li>
+                                </ol>
+                            </td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">11:00–11:30</td>
+                            <td colspan="2">Coffee break</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Workshop Sessions</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:30–13:00</td>
+                            <td colspan="2">Workshop Session 1</td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">13:00–14:00</td>
+                            <td colspan="2">Lunch</td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">14:00–15:30</td>
+                            <td colspan="2">Workshop Session 2</td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">15:30–16:00</td>
+                            <td colspan="2">Coffee break</td>
+                        </tr>
+
+                        <tr class="row-special">
+                            <td class="time-col">16:00–17:00</td>
+                            <td colspan="2">
+                                &#9889; Lightning talks: Posters
+                                <ol class="lightning-list" start="18">
+                                    <li>Kaarel Kaspar Räis</li>
+                                    <li>Giovanna Sainz</li>
+                                    <li>Giulia La Bianca</li>
+                                    <li>Judith Fischer</li>
+                                    <li>Beatriz Naranjo-Elizondo</li>
+                                    <li>Jennifer Durden</li>
+                                    <li>Fergal McGrath</li>
+                                    <li>Kevin Barnard</li>
+                                    <li>João Balsa</li>
+                                    <li>Tiffany Cunanan</li>
+                                    <li>Henrique Mourato</li>
+                                    <li>Carolin Zofall</li>
+                                    <li>Filippo Pandolfi</li>
+                                    <li>Craig Fergusson</li>
+                                    <li>Elizabeth Hasan</li>
+                                    <li>Emmeline Broad</li>
+                                    <li>Gerrit Meiners</li>
+                                    <li>Kea Witting</li>
+                                    <li>Avery Rose</li>
+                                    <li>Kristopher Carrigan</li>
+                                    <li>Nils Piechaud</li>
+                                </ol>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-col">17:15–19:15</td>
+                            <td colspan="2">Poster Session</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ============================================================
+                 THURSDAY 21 MAY — Conference Day 3
+                 ============================================================ -->
+            <div id="tab-thu" class="day-panel">
+                <h3>Thursday, 21 May 2026 — Conference Day 3</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Speaker</th>
+                            <th>Talk / Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-break">
+                            <td class="time-col">08:30–09:15</td>
+                            <td colspan="2">Registration &amp; coffee (light breakfast)</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Session 3: Ocean Data Management</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">09:15–09:30</td>
+                            <td class="presenter-name">Corinne Bassin</td>
+                            <td class="talk-title">From Seafloor to Science: An End-to-End Imaging and Annotation Pipeline for ROV SuBastian</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">09:30–09:45</td>
+                            <td class="presenter-name">Munsif Ali</td>
+                            <td class="talk-title">AI4DeepSea: Development of Artificial Intelligence for the study of communities in deep marine environments</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">09:45–10:00</td>
+                            <td class="presenter-name">Ariell Friedman</td>
+                            <td class="talk-title">Squidle+ updates: New and Improved Workflows, Real-Time Field Analysis, Multi-Media Annotation and AI Collaboration</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:00–10:15</td>
+                            <td class="presenter-name">Carolina Ventura-Costa</td>
+                            <td class="talk-title">FAIR &amp; Open Marine imaging data workflow: from deep-sea exploration planning to data reuse</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10:15–10:30</td>
+                            <td class="presenter-name">Jonny Savage</td>
+                            <td class="talk-title">A Federated Image Brokerage Service for Scalable Biodiversity Analysis from Marine Imagery</td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">10:30–11:00</td>
+                            <td colspan="2">Coffee break</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Session 4: Advancing Biology through Imaging — Marine Applications</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:00–11:15</td>
+                            <td class="presenter-name">Christine Morrow</td>
+                            <td class="talk-title">An introduction to the Marine Biodiversity Data Portal – NI</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:15–11:30</td>
+                            <td class="presenter-name">Alexa Parimbelli</td>
+                            <td class="talk-title">Multi-locus species delimitation as a tool to inform image-based identification of deep-sea Antipatharia</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:30–11:45</td>
+                            <td class="presenter-name">Knut Mehler</td>
+                            <td class="talk-title">Integrating Optical and Acoustic Imaging to Improve Benthic Habitat Mapping in the Wadden Sea</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:45–12:00</td>
+                            <td class="presenter-name">Awantha Dissanayake</td>
+                            <td class="talk-title">Observation Per Unit Effort (OPUE): Standardising MaxN-Based Relative Abundance in Remote Underwater Video Surveys</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:00–12:15</td>
+                            <td class="presenter-name">Rob Harbour</td>
+                            <td class="talk-title">Integrating eDNA Metaprobes with Camera Sled Seafloor Imagery in U.K. Offshore MPA Monitoring: A Pilot Study</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:15–12:30</td>
+                            <td class="presenter-name">Melanie Stott</td>
+                            <td class="talk-title">Integrating video analysis and eDNA data to improve taxonomic identification and biodiversity assessments</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">12:30–12:45</td>
+                            <td class="presenter-name">Catherine Borremans</td>
+                            <td class="talk-title">Making visible the invisible: using quantitative imaging and semi-automatic annotation for the identification of microscopic infauna</td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">12:45–13:45</td>
+                            <td colspan="2">Lunch</td>
+                        </tr>
+
+                        <tr class="row-session">
+                            <td colspan="3">Session 4 (continued): Advancing Biology through Imaging — Marine Applications</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">13:45–14:00</td>
+                            <td class="presenter-name">Jaime Davies</td>
+                            <td class="talk-title">Assessing the impacts of litter on deep-sea ecosystem for conservation</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:00–14:15</td>
+                            <td class="presenter-name">Charlene Erasito</td>
+                            <td class="talk-title">Exploring Hidden Worlds: Multiscale Characterisation of Benthic Biodiversity and Mesopelagic Community Abundance on Stylaster Seamount in the Natural Park of the Coral Sea, New Caledonia</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:15–14:30</td>
+                            <td class="presenter-name">Tom Morgan</td>
+                            <td class="talk-title">Beyond Accuracy: Enhancing Seafloor Mapping through Multimodal Fusion and uncertainty aware machine learning</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:30–14:45</td>
+                            <td class="presenter-name">Marc Allentoft-Larsen</td>
+                            <td class="talk-title">ML-Assisted Analysis of Extended-Duration Imaging Using Long-Range AUV: Application to Siphonophore Diel Vertical Migration</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">14:45–15:00</td>
+                            <td class="presenter-name">Whitney Goodell</td>
+                            <td class="talk-title">Illuminating Deep-Sea Biodiversity: Multi-Tool Deep Sea Imaging and a Pacific-Wide Synthesis of Nautilus Observations</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">15:00–15:15</td>
+                            <td class="presenter-name">Filippo Varini</td>
+                            <td class="talk-title">Towards Trustworthy AI for Deep-Sea Video Analysis: A Human-in-the-Loop, Foundation-Model–Based Pipeline and Its Ecological Evaluation</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">15:15–15:30</td>
+                            <td class="presenter-name">Kakani Katija</td>
+                            <td class="talk-title">FathomVerse: Gaming for Ocean Exploration</td>
+                        </tr>
+
+                        <tr class="row-break">
+                            <td class="time-col">15:30–16:00</td>
+                            <td colspan="2">Coffee break</td>
+                        </tr>
+
+                        <tr class="row-special">
+                            <td class="time-col">16:00–17:00</td>
+                            <td colspan="2">Discussion Session</td>
+                        </tr>
+                        <tr class="row-special">
+                            <td class="time-col">17:00–17:30</td>
+                            <td colspan="2">Close of Conference</td>
+                        </tr>
+                        <tr class="row-dinner">
+                            <td class="time-col">20:00–22:00</td>
+                            <td colspan="2">Conference Dinner — Aurora Ballroom, Sunborn Hotel</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ============================================================
+                 FRIDAY 22 MAY — Field Trips
+                 ============================================================ -->
+            <div id="tab-fri" class="day-panel">
+                <h3>Friday, 22 May 2026 — Field Trips</h3>
+                <p>Field trips depart from the Sunborn Hotel. See the <a href="conference_outline.html#field-trips">Conference Outline</a> page for full details and booking information.</p>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time-col">10:00–12:30</td>
+                            <td>Rock Tour — £40 per person</td>
+                            <td>Pickup from Sunborn (Ocean Village)</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">Various</td>
+                            <td>Dolphin Adventure — £20 per person</td>
+                            <td>Book directly with Dolphin Adventures, mention University of Gibraltar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section alt">
+            <h2>Contact</h2>
+            <p>For more information email <a href="mailto:SMES@unigib.edu.gi">SMES@unigib.edu.gi</a></p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Marine Imaging Workshop</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.day-tab').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.day-tab').forEach(function (b) { b.classList.remove('active'); });
+                document.querySelectorAll('.day-panel').forEach(function (p) { p.classList.remove('active'); });
+                btn.classList.add('active');
+                document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
